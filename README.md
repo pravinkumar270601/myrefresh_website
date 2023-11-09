@@ -1,5 +1,4 @@
 Karthi
-Added second line
 
 # Getting Started with Create React App
 
