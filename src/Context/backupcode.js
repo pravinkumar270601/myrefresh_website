@@ -11,6 +11,8 @@ const getDefaultCart = () => {
     }
     return cart;
 }
+
+// without local storage 
 const RefreshContextProvider = (props) => {
     const [cartItems,setCartItems]=useState(getDefaultCart())
     console.log(cartItems)
