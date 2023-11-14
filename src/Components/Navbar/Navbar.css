@@ -12,6 +12,7 @@
   color: white;
   padding-top: 20px;
   padding-bottom: 20px;
+  
 }
 .my-navbar {
   background-color: var(--primary-color);
@@ -20,6 +21,7 @@
   padding-bottom: 20px;
   padding-right: 80px;
   padding-left: 80px;
+  width: 100%;
 }
 .nav-logo {
   padding-left: 30px;

@@ -32,7 +32,7 @@
 .item-sale{
   width: 58px;
   height: 29px;
-  z-index: 99;
+  z-index: 3;
   top: -327px;
   position: absolute;
   left: 29px;

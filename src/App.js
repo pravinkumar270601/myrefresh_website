@@ -17,7 +17,9 @@ function App() {
   return (
     <div>
       <BrowserRouter>
-        <Navbar />
+        <nav className="nav">
+          <Navbar />
+        </nav>
         <Routes>
           <Route path="/" element={<Refresh />} />
           <Route path="/hair" element={<RefreshCategory category="hair" />} />
@@ -25,18 +27,17 @@ function App() {
           <Route path="/face" element={<RefreshCategory category="face" />} />
           <Route path="/kits" element={<RefreshCategory category="kits" />} />
 
-          <Route path="product" element={<Product/>}>
-          <Route path=":productId" element={<Product/>} />
+          <Route path="product" element={<Product />}>
+            <Route path=":productId" element={<Product />} />
           </Route>
 
           <Route path="/cart" element={<Cart />} />
 
           <Route path="/ourstory" element={<OurStory />} />
-          <Route path="/blog" element={<Blog/>} />
-          <Route path="/contact" element={<Contect/>} />
-
+          <Route path="/blog" element={<Blog />} />
+          <Route path="/contact" element={<Contect />} />
         </Routes>
-        <Footer/>
+        <Footer />
       </BrowserRouter>
     </div>
   );
