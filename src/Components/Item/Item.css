@@ -106,7 +106,9 @@
 }
 
 /* Css for add cart items end */
+/* css for Link react component start */
 .item-Link{
   text-decoration: none;
   color:var(--primary-color) ;
 }
+/* css for Link react component start */
