@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useContext } from "react";
 import "./Navbar.css";
 // import "bootstrap/dist/css/bootstrap.min.css";
 // import "bootstrap/dist/js/bootstrap.bundle.min";
@@ -7,10 +7,10 @@ import { IoBagHandleOutline } from "react-icons/io5";
 import logo from "../Assets/logo.avif";
 
 import { Link } from "react-router-dom";
+import { RefreshContext } from "../../Context/RefreshContext";
 
 const Navbar = () => {
- 
-
+  const {getTotalCartItems}=useContext(RefreshContext);
   return (
     <div className="my-navbar">
       <div className="d-flex justify-content-between nav-logo">
@@ -24,7 +24,7 @@ const Navbar = () => {
         </div>
         <div>
           <IoBagHandleOutline className="cart-icon" />
-          <div className="nav-cart-count">2</div>
+          <div className="nav-cart-count">{getTotalCartItems()}</div>
         </div>
       </div>
 

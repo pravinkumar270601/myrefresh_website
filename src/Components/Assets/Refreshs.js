@@ -29,7 +29,7 @@ export let favorite_skincare = [
   {
     src1: image1,
     src2: image2,
-    id: 1,
+    id: 16,
     alt: "Image 1",
     heading: "Face Moisturizer",
     RegularPrice: "16.00",
@@ -38,7 +38,7 @@ export let favorite_skincare = [
   {
     src1: image3,
     src2: image4,
-    id: 2,
+    id: 17,
     alt: "Image 2",
     heading: "Eye Stick 2.0",
     RegularPrice: "$18.00",
@@ -47,7 +47,7 @@ export let favorite_skincare = [
   {
     src1: image5,
     src2: image6,
-    id: 3,
+    id: 18,
     alt: "Image 2",
     heading: "Face Wash - Travel Size",
     offerprice: "$10.00",
@@ -58,7 +58,7 @@ export let favorite_skincare = [
   {
     src1: image7,
     src2: image8,
-    id: 4,
+    id: 19,
     alt: "Image 2",
     heading: "Face Wash",
     RegularPrice: "$14.00",
@@ -104,7 +104,7 @@ export let Fpage_send_cart = [
   {
     src1: image13,
     src2: image14,
-    id: 1,
+    id: 20,
     alt: "Image 1",
     heading: "Body Duo",
     RegularPrice: "$26.00",
@@ -115,7 +115,7 @@ export let Fpage_send_cart = [
   {
     src1: image15,
     src2: image16,
-    id: 2,
+    id: 21,
     alt: "Image 2",
     heading: "Face and Body Kit",
     RegularPrice: "$41.00",
@@ -124,7 +124,7 @@ export let Fpage_send_cart = [
   {
     src1: image17,
     src2: image18,
-    id: 3,
+    id: 22,
     alt: "Image 2",
     heading: "Hair and Body kit ",
     RegularPrice: "$39.00",
@@ -133,7 +133,7 @@ export let Fpage_send_cart = [
   {
     src1: image19,
     src2: image20,
-    id: 4,
+    id: 23,
     alt: "Image 2",
     heading: "Face kit",
     RegularPrice: "$45.00",

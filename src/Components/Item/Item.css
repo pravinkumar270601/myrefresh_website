@@ -106,3 +106,7 @@
 }
 
 /* Css for add cart items end */
+.item-Link{
+  text-decoration: none;
+  color:var(--primary-color) ;
+}
