@@ -8,6 +8,7 @@ import logo from "../Assets/logo.avif";
 
 import { Link } from "react-router-dom";
 import { RefreshContext } from "../../Context/RefreshContext";
+import Cart from "../../Pages/Cart";
 
 const Navbar = () => {
   const {getTotalCartItems}=useContext(RefreshContext);
@@ -22,10 +23,38 @@ const Navbar = () => {
             </Link>
           
         </div>
-        <div>
+        <div type="button"
+                data-bs-toggle="offcanvas"
+                data-bs-target="#offcanvasWithBothOptions"
+                aria-controls="offcanvasWithBothOptions">
           <IoBagHandleOutline className="cart-icon" />
           <div className="nav-cart-count">{getTotalCartItems()}</div>
         </div>
+        <div
+                class="offcanvas offcanvas-end"
+                data-bs-scroll="true"
+                tabindex="-1"
+                id="offcanvasWithBothOptions"
+                aria-labelledby="offcanvasWithBothOptionsLabel"
+              >
+                <div class="offcanvas-header">
+                  <h5
+                    class="offcanvas-title"
+                    id="offcanvasWithBothOptionsLabel"
+                  >
+                    Your cart
+                  </h5>
+                  <button
+                    type="button"
+                    class="btn-close"
+                    data-bs-dismiss="offcanvas"
+                    aria-label="Close"
+                  ></button>
+                </div>
+                <div class="offcanvas-body">
+                  <Cart />
+                </div>
+              </div>
       </div>
 
       <div className="d-flex justify-content-center nav-menu">
